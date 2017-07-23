@@ -1,3 +1,28 @@
+
+nav li {
+	list-style-type: none;
+	display: inline-flex;
+	text-decoration: none;	
+}
+
+nav li a {
+	text-decoration: none;
+}
+
 img {
 	max-width: 25px;
 }
+
+a:hover {
+  color: rgba(76, 171, 178, 0.92);
+  background-color: rgba(76, 178, 134, 0.25);
+  text-decoration: none;
+}
+
+.selected {
+  margin: 0 5px;
+  font-size: 125%;
+  color: rgba(45, 103, 107, 0.92);
+  text-decoration: none;
+}
+
