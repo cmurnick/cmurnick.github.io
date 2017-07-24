@@ -26,3 +26,28 @@ a:hover {
   text-decoration: none;
 }
 
+.blog h4 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.blog h5 {
+  text-align: center;
+  margin: 10px 5px;
+}
+
+.blogContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.blog {  
+  align-items: center;
+  max-width: 250px;
+  margin: 10px;
+  border: 1px solid lightgray;
+  padding: 5px 20px;
+}
