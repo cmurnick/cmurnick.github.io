@@ -7,15 +7,15 @@ var blog1 = {
 };
 
 var blog2 = {
-	name: "My Blog 2",
+	name: "The struggle",
 	date: "August 7, 2017",
 	blog: "The further we get into JavaScript, the more this struggle has become real.  I know what I want to build, however, coding it correctly has been a different story.  I am going to ask for more practice projects to help solidify these concepts.  It’s been a month since school started and if I look backwards, I have learned so much.  Things that I was struggling with now come naturally.  I’m praying that JavaScript works the same way.  I’m waiting not so patiently for the lightbulb to go on. "
 };
 
 var blog3 = {
-	name: "My Blog 3",
-	date: "July 22, 2017",
-	blog: "Three Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. "
+	name: "Working in a Group",
+	date: "August 14, 2017",
+	blog: "We had our first group project where we were all pushing our individual pages to GitHub. Our group didn’t have a ton of merge conflicts because we planned well and each had our own CSS and JS files forour individual pages. We have a great group, so I feel like we did pretty well. We divided and conquered pretty well. We could have been more consistent on the styling of each page, but overall we did ok for our first group project."
 };
 
 var blog4 = {
