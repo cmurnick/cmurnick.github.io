@@ -1,5 +1,5 @@
 
-nav li {
+/*nav li {
 	list-style-type: none;
 	display: inline-flex;
 	text-decoration: none;	
@@ -24,40 +24,70 @@ a:hover {
   font-size: 125%;
   color: rgba(45, 103, 107, 0.92);
   text-decoration: none;
-}
+}*/
+
+
+/*with the bootstrap some additions:
+*/
+/*
+.container {
+  padding: 5px;
+
+
+}*/
+
+
 
 .blog h4 {
   text-transform: uppercase;
   font-size: 1.5em;
   margin-bottom: 10px;
   text-align: center;
+  display: block;
 }
 
 .blog h5 {
   text-align: center;
   margin: 10px 5px;
+  display: block;
+  
 }
 
-#blog-holder {
+/*#blog-holder {
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 
 }
+*/
+body {
+  padding-top: 90px;
+}
+
+.set-height {
+    display: block;
+    display: -webkit-box;
+    height: 100px;
+ /*   margin: 0 auto;*/
+    margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 /*.blogContainer {
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /*justify-content: center;*/
+  /*justify-content: center;
 
 
-.blog {  
+/*.blog {  
   /*align-items: center;*/
-  max-width: 250px;
+  /*max-width: 250px;
   margin: 10px;
   border: 1px solid lightgray;
   padding: 5px 20px;
-}
+}*//***//*/
 

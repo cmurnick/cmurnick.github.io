@@ -63,18 +63,15 @@ for (var i = 0; i < blogs.length; i++) {
 
 	var domString = "";
 
-domString += '<div class="blogContainer">';
-domString +=		'<section class="blog">';
-domString +=			'<header>';
-domString +=				'<h4 class="title">' + currentBlog.name + '</h4>';
-domString +=				'<h5 class ="date">' + currentBlog.date + '</h5>';
-domString +=			'</header>';
-
-domString +=			'<div class="info">';
-domString +=				'<p>' + currentBlog.blog + '</p>';
-domString +=			'</div>';
-domString +=		'</section>';
-domString +=	'</div>';
+domString += '<div class= "col-xs-4 blogContainer">';
+domString +=	'<div class="set-height thumbnail blog">';
+					<div class="caption">
+domString +=		'<h4 class="title">' + currentBlog.name + '</h4>';
+domString +=		'<h5 class ="date">' + currentBlog.date + '</h5>';
+domString +=		'<p>' + currentBlog.blog + '</p>';
+domString +=		'</div>';
+					'</div>';
+domString +='</div>';
 
 
 
