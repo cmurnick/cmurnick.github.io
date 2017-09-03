@@ -41,10 +41,10 @@ function executeThisCodeIfFileErrors() {
 };
 
 var myBlogs = new XMLHttpRequest();
-myBlogs.addEventListener("load", executeThisCodeAfterFileLoads);
-myBlogs.addEventListener("error", executeThisCodeIfFileErrors);
-myBlogs.open("GET", "blog.json");
-myBlogs.send();
+	myBlogs.addEventListener("load", executeThisCodeAfterFileLoads);
+	myBlogs.addEventListener("error", executeThisCodeIfFileErrors);
+	myBlogs.open("GET", "blog.json");
+	myBlogs.send();
 
 // blogs.push(blog1);
 // blogs.push(blog2);
@@ -57,31 +57,72 @@ myBlogs.send();
 function getBlogs(blogs) {
 var blogHolder = document.getElementById("blog-holder")
 
-for (var i = 0; i < blogs.length; i++) {
+	for (var i = 0; i < blogs.length; i++) {
 
-	var currentBlog = blogs[i];
+		var currentBlog = blogs[i];
 
-	var domString = "";
+		var domString = "";
 
-domString += '<div class="blogContainer">';
-domString +=		'<section class="blog">';
-domString +=			'<header>';
-domString +=				'<h4 class="title">' + currentBlog.name + '</h4>';
-domString +=				'<h5 class ="date">' + currentBlog.date + '</h5>';
-domString +=			'</header>';
-
-domString +=			'<div class="info">';
-domString +=				'<p>' + currentBlog.blog + '</p>';
-domString +=			'</div>';
-domString +=		'</section>';
-domString +=	'</div>';
+		domString += '<div class= "product3 col-xs-4 blogContainer">';
+		domString +=	'<div class="product2 set-height thumbnail blog">';
+		domString +=		'<div class="product1 caption">'
+		domString +=			'<div class="text-uppercase list title">' + currentBlog.name + '</div>';
+		domString +=			'<div class ="list date">' + currentBlog.date + '</div>';
+		domString +=			'<div class ="list blog">' + currentBlog.blog + '</div>';
+		domString +=		'</div>';
+		domString += 	'</div>';
+		domString += '</div>';
 
 
 
-blogHolder.innerHTML += domString;
+		blogHolder.innerHTML += domString;
+		}
+
+		console.log("domString from for loop", domString);
+		}
+
+
+
+
+let selectedBlog;
+
+document.getElementById("blog-holder").addEventListener("click", (event) => {
+  console.log(event);
+  chooseBlog(event);
+  printSelectedBlog();
+})
+
+const chooseBlog = (event) => {
+    if (event.target.classList.contains("list")) {
+      selectedBlog = event.target.parentNode.parentNode.parentNode;
+    } else if (event.target.parentNode.parentNode.classList.contains("product1")) {
+      selectedBlog = event.target.parentNode.parentNode;
+    } else if (event.target.parentNode.classList.contains("product2")) {
+      selectedBlog = event.target.parentNode;
+    } else if (event.target.classList.contains("product3")) {
+    	selectedBlog = event.target;	
+    }
+    
+   return(selectedBlog);
 }
 
-console.log("domString from for loop", domString);
+const printSelectedBlog = () => {
+
+  const blogDescription = selectedBlog.childNodes[0].childNodes[0].innerHTML;
+  var wholeBlog = document.getElementById("entireBlog")
+  wholeBlog.innerHTML = blogDescription;
+  console.log(blogDescription);
 }
+
+
+
+ // const blogDescription = selectedBlog.childNodes[0].childNodes[0].childNodes[0].childNodes[2].innerHTML;
+
+
+
+
+
+
+
 
 
