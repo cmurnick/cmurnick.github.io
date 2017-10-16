@@ -1,27 +1,30 @@
-let blog = [];
+let blogs = [];
 
-$.get('./blog.json').done((data) => {
+$.get('/blog.json').done((data) => {
 	blog = data.blogs;
+	getBlogs(blog);
+	console.log(blog);
 }).fail((error) => {
 	console.log(error);
 });
 
 
-const getBlogs = (blogs) => {
+
+
+const getBlogs = (blog) => {
 	let blogzString ='';
 
-	for (let i = 0; i < blogs.length; i++) {
+	for (let i = 0; i < blog.length; i++) {
 
-		let currentBlog = blogs[i];
 
 		let domString = "";
 
 		domString += `<div class= "product3 col-xs-4 blogContainer">`;
 		domString +=	`<div class="product2 set-height thumbnail blog">`;
 		domString +=		'<div class="product1 caption">'
-		domString +=			`<div class="text-uppercase list title"> ${currentBlog.name} </div>`;
-		domString +=			`<div class ="list date"> ${currentBlog.date} </div>`;
-		domString +=			`<div class ="list blog"> ${currentBlog.blog} </div>`;
+		domString +=			`<div class="text-uppercase list title"> ${blog[i].name} </div>`;
+		domString +=			`<div class ="list date"> ${blog[i].date} </div>`;
+		domString +=			`<div class ="list blog"> ${blog[i].blog} </div>`;
 		domString +=		`</div>`;
 		domString += 	`</div>`;
 		domString += `</div>`;
@@ -34,42 +37,42 @@ const getBlogs = (blogs) => {
 		printToDom(blogzString);
 	}
 
-const printToDom = (string) => {
-	$('#blog-holder').html(string);
+const printToDom = (strang) => {
+	$('#blog-holder').append(strang);
 };
 
 
 let selectedBlog;
 
 
-$('#blog-holder').click(() => {
-	chooseBlog(event);
-  	printSelectedBlog();
+$('body').on('click', '.blog', (event) => {
+	$(event.target).closest(".blog").appendTo('#entireBlog');
 });
 
 
-const chooseBlog = (event) => {
-    if (event.target.hasClass("list")) {
-      selectedBlog = event.target.parentsUntil("#blog-holder");
-    } else if (event.target.parentsUntil("product1")) {
-      selectedBlog = event.target.parentsUntil("#blog-holder");
-    } else if (event.target.parentsUntil("product2")) {
-      selectedBlog = event.target.parentUntil("#blog-holder");
-    } else if (event.target.parentUntil("product3")) {
-    	selectedBlog = event.target;	
-    }
-    
-   return(selectedBlog);
-}
 
-const printSelectedBlog = () => {
+// $('#blog-holder').click((event) => {
+// 	if($(event.target).closest('.product3'))
+// 		console.log(event);
+	// chooseBlog(event);
+  	// printSelectedBlog();
+// });
 
-  const blogDescription = selectedBlog.childNodes[0].childNodes[0].innerHTML;
-  let wholeBlog = $('#entireBlog').html(string);
-  wholeBlog.innerHTML = blogDescription;
+
+// const chooseBlog = (event) => {
+//     if (event.target.closest(list")) {
+//    return(selectedBlog);
+//    console.log(selectedBlog);
+// };
+// };
+// const printSelectedBlog = () => {
+
+//   const blogDescription = selectedBlog.childNodes[0].childNodes[0].innerHTML;
+//   let wholeBlog = $('#entireBlog').html(string);
+//   wholeBlog.innerHTML = blogDescription;
   
-  console.log(blogDescription);
-}
+//   // console.log(blogDescription);
+// }
 
 
 
