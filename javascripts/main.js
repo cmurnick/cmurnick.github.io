@@ -1,7 +1,9 @@
+"use strict";
+
 let blogs = [];
 
-$.get('/blog.json').done((data) => {
-	blog = data.blogs;
+$.get('blog.json').done((data) => {
+	let blog = data.blogs;
 	getBlogs(blog);
 	console.log(blog);
 }).fail((error) => {
@@ -21,7 +23,7 @@ const getBlogs = (blog) => {
 
 		domString += `<div class= "product3 col-xs-4 blogContainer">`;
 		domString +=	`<div class="product2 set-height thumbnail blog">`;
-		domString +=		'<div class="product1 caption">'
+		domString +=		'<div class="product1 caption">';
 		domString +=			`<div class="text-uppercase list title"> ${blog[i].name} </div>`;
 		domString +=			`<div class ="list date"> ${blog[i].date} </div>`;
 		domString +=			`<div class ="list blog"> ${blog[i].blog} </div>`;
@@ -35,7 +37,7 @@ const getBlogs = (blog) => {
 		}
 
 		printToDom(blogzString);
-	}
+	};
 
 const printToDom = (strang) => {
 	$('#blog-holder').append(strang);
