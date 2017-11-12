@@ -1,3 +1,4 @@
 lib/node_modules
 db/firebaseKey.json
+dist
 public
