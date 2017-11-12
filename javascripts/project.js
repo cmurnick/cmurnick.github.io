@@ -1,9 +1,9 @@
 "use strict";
 
-let projectKey;
+let firebaseKey;
 
 const setKey = (apiKey) => {
-  projectKey = apiKey;
+  firebaseKey = apiKey;
 };
 
 module.exports = {setKey};

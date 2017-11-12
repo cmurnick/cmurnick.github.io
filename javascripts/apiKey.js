@@ -1,12 +1,12 @@
 "use strict";
 
 const project = require('./project');
-const blog = require('.blog');
+const data = require('./data');
 
 const apiKeys = () => {
 	return new Promise ((resolve, reject) => {
-		$.ajax ('./db/blogs.json').done((data) => {
-			resolve(data.blogs);
+		$.ajax ('./db/firebaseKey.json').done((data) => {
+			resolve(data.firebaseKeys);
 		}).fail((error) => {
 			reject(error);
 		});
@@ -16,8 +16,9 @@ const apiKeys = () => {
 const retrieveKeys = () => {
 	apiKeys().then((results) => {
 		project.setKey(results.apiKey);
-		blog.setKey(results);
+		data.setKey(results);
 		firebase.initializeApp(results.firebaseKeys);
+		data.getBlogJSON();
 	});
 };
 
