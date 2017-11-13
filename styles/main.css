@@ -34,3 +34,7 @@ body {
 
 .navbar {
   background-color: #aefcf3; }
+
+.screenshot {
+  width: 250px;
+  height: 300px; }

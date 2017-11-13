@@ -32,11 +32,11 @@
 	],
 	"projects": [
 		{
-			"name": "project name",
-			"screenshot": "./images/facebook.png",
+			"name": "Theme Park",
+			"screenshot": "../images/ThemePark.png",
 			"description": "blahbla",
 			"link": "url:",
-			"deployLink": ""
+			"deployLink": "why isn't this working"
 
 
 	}]
