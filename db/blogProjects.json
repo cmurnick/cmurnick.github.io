@@ -34,9 +34,9 @@
 		{
 			"name": "Theme Park",
 			"screenshot": "../images/ThemePark.png",
-			"description": "blahbla",
-			"link": "url:",
-			"deployLink": "why isn't this working"
+			"description": "This was a group project.  See the readme file for details",
+			"link": "https://github.com/nss-evening-cohort-06/theme-park-protagonists",
+			"deployLink": "https://theme-park-927c8.firebaseapp.com"
 
 
 	}]
