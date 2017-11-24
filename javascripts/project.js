@@ -17,14 +17,14 @@ const getProjects = (project) => {
 
 		let domString = "";
 
-		// domString += `<div class= "product3 col-xs-4 blogContainer">`;
-		domString +=	`<div class="product2 set-height project">`;
+		domString += `<div class= "product3 col-xs-4 blogContainer">`;
+		domString +=	`<div class="project">`;
 		domString +=		'<div class="product1 caption">';
 		domString +=			`<div class="text-uppercase list title"> ${project[i].name} </div>`;
 		domString +=			`<div class ="list date"> ${project[i].description} </div>`;
 		domString +=			`<img class ="list screenshot" src =${project[i].screenshot}>`;
-		domString +=			`<div class ="list link"> ${project[i].link} </div>`;
-		domString +=			`<div class ="list deployLink"> ${project[i].deployLink} </div>`;
+		domString +=			`<div class ="list link"><a href="${project[i].link}">Link to Github</div>`;
+		domString +=			`<div class ="list deployLink"><a href="${project[i].deployLink}">Link to Website</div>`;
 
 		domString +=		`</div>`;
 		domString += 	`</div>`;
