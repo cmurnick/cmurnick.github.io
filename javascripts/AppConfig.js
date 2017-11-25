@@ -9,11 +9,11 @@ app.config(function($routeProvider){
   $routeProvider
     .when("/history", {
       templateUrl: 'partials/history.html',
-      controller: 'historyCtrl',
+      // controller: 'historyCtrl',
     })
     .when("/contact", {
       templateUrl: 'partials/contact.html',
-      controller: 'contactCtrl',
+      // controller: 'contactCtrl',
     })
     .when("/projects", {
       templateUrl: 'partials/projects.html',
@@ -21,7 +21,7 @@ app.config(function($routeProvider){
     })
     .when("/aboutMe", {
       templateUrl: 'partials/aboutMe.html',
-      controller:'aboutMeCtrl',
+      // controller:'aboutMeCtrl',
     })
     .when("/blog", {
       templateUrl: 'partials/blog.html',
