@@ -6,7 +6,6 @@ app.service("BlogService", function($http, $q, FIREBASE_CONFIG) {
 		return $q((resolve,reject) => {
 			$http.get(`${FIREBASE_CONFIG.databaseURL}/blogs.json`).then((results) => {
 				let fbBlogs = results.data;
-				console.log("fbContacts", fbBlogs);
 
 				Object.keys(fbBlogs).forEach((key) => {
 					fbBlogs[key].id = key;
@@ -21,9 +20,23 @@ app.service("BlogService", function($http, $q, FIREBASE_CONFIG) {
 
 	};
 
-const getSingleBlog = (blogId)=> {
-				return $http.get(`${FIREBASE_CONFIG.databaseURL}/blogs/${blogId}.json`);
-			};
+	const createBlogObject = (blog) => {
+		return {
+			"id": blog.id,
+			"name": blog.name,
+			"date": blog.date,
+			"detail": blog.detail,
+			"showDetails": blog.showDetails
+		};
+	};
 
-	return{getBlogs, getSingleBlog};
+	const getSingleBlog = (blogId)=> {
+					return $http.get(`${FIREBASE_CONFIG.databaseURL}/blogs/${blogId}.json`);
+	};
+
+	const updateBlog = (blog, blogId) => {
+			return $http.put(`${FIREBASE_CONFIG.databaseURL}/blogs/${blogId}.json`, JSON.stringify(blog));
+	};
+
+	return{getBlogs, getSingleBlog, createBlogObject, updateBlog};
 });

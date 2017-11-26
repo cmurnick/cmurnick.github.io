@@ -32,26 +32,37 @@ body {
   overflow: hidden;
   text-overflow: ellipsis; }
 
-#entireIndivBlog {
+.entireIndivBlog {
   min-height: 50px;
   border: 1px solid gray;
   background-color: white;
   border-radius: 5px 5px 5px 5px;
   font-color: gray; }
 
-.footer {
-  position: fixed-to-bottom; }
+.thumbnail {
+  position: relative;
+  min-height: 750px; }
 
-.clearfix:after {
-  content: ".";
+.project {
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
   display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden; }
-
-.screenshot {
-  width: 400px;
-  height: 350px; }
+  display: wrap; }
+  .project .words {
+    text-align: left; }
+  .project .header {
+    font-weight: bold;
+    font-size: 28px; }
+  .project .description {
+    font-size: 18px; }
+  .project .screenshot {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    border: 1px solid lightgray;
+    position: relative; }
 
 .fa {
   color: darkGray;

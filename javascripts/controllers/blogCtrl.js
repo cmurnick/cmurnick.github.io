@@ -1,12 +1,11 @@
 "use strict";
 
-app.controller("blogCtrl", function($rootScope, $scope, BlogService) {
+app.controller("blogCtrl", function($rootScope, $routeParams, $scope, BlogService) {
 	$scope.controller = "blogCtrl";
 
 	const showBlogs = () => {
 		BlogService.getBlogs($rootScope).then((results) => {
 			$scope.blogs = results;
-			console.log("results of showBlogs", results);
 		}).catch((err)  => {
 			console.log("error in showblogs", err);
 		});
@@ -14,12 +13,36 @@ app.controller("blogCtrl", function($rootScope, $scope, BlogService) {
 
 	showBlogs();
 
-	$scope.AppendText = function() {
-     var myEl = angular.element( document.querySelector( 'entireIndivBlog' ) );
-     BlogService.getBlogs($rootScope).then((results) => {
-			$scope.blogs = results.detail}
-     		results.detail=	myEl.append(blog);     
-    };
+	//was getContact in contactDetailCtrl in AngularContacts
+	// const getOnlyOne = () => {
+	// 	BlogService.getSingleBlog($routeParams.id).then((results) =>{
+	// 		$scope.blog=results.detail;
+	// 		console.log(results.detail);
+	// 		console.log("contactDetailCtrlgtContact", results.detail);
+	// 	}).catch((err) => {
+	// 		console.log("Err in Getsinglecontact", err);
+	// 		});
+	// 	};
+
+	$scope.switchShowDetails = function(blog, isShowDetail) {
+		blog.showDetails = isShowDetail;
+		let updatedBlog = BlogService.createBlogObject(blog);
+		BlogService.updateBlog(updatedBlog, blog.id).then((result) => {
+			console.log("result append blog", result);
+			showBlogs();
+
+		}).catch((err) => {
+			console.log("error in appendText", err);
+		});
+
+	};
+
+
+   //   var myEl = angular.element( document.querySelector( 'entireIndivBlog' ) );
+   //   BlogService.getBlogs($rootScope).then((results) => {
+			// $scope.blogs = results.detail}
+   //   		results.detail=	myEl.append(blog);     
+   //  };
 
 	// $scope.blogDetail = "{{blog.detail}}";
 	// $scope.myVar = false;

@@ -42,7 +42,7 @@ body {
     text-overflow: ellipsis;
 }
 
-#entireIndivBlog {
+.entireIndivBlog {
   min-height: 50px;
   border: 1px solid gray;
   background-color: white;
@@ -50,14 +50,7 @@ body {
   font-color: gray;
 }
 
-.footer {
-  position: fixed-to-bottom;
-}
 
-  .clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
+
+
+

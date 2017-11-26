@@ -4,20 +4,22 @@
 
 
 
-  <div class="container">
+  <div >
     <!-- <div class=" row"> -->
       <div><h4 class="text-center">Click on any blog post to view the entire post here:</h4></div>
-      <div id="entireIndivBlog" class ="col-xs-8 col-md-10 col-xs-offset-2 col-md-offset-1">
+      
+      <div ng-if="!blog.showDetails" class ="entireIndivBlog col-xs-8 col-md-10 col-xs-offset-2 col-md-offset-1">
+        <p >crap</p>
       </div>
   </div>
 
-  <div id="blogs">
+  <div >
     <div class="container-fluid col-sm-6 col-md-4" ng-repeat="blog in blogs">
-          <div class="set-height thumbnail blog" ng-click="AppendText()">
-            <div class="caption">
-              <div class="text-uppercase list title">{{blog.name}} </div>
+          <div class="set-height thumbnail blog" ng-click="switchShowDetails(blog, true)">
+            <div class="caption" >
+              <div class ="text-uppercase list title">{{blog.name}} </div>
               <div class ="list date">{{blog.date}}</div>
-              <div class ="list blog" ng-model="blogDetail">{{blog.detail}} </div>
+              <div class ="list blog">{{blog.detail}} </div>
             </div>
           </div>
       </div>
