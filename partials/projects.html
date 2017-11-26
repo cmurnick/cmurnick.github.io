@@ -1,0 +1,34 @@
+<div>
+		<div>
+		  <h1 class="text-center mainHeader">My Projects</h1>
+		</div>
+
+		<div id="project-holder">
+		
+			<div ng-repeat="project in projects" class="col-xm-12 col-md-6 " >
+				<div class="thumbnail project">
+						<div class="text-uppercase project list header title">{{project.name}} </div>
+						<div class ="description project words">{{project.description}} </div>
+							<img class ="list screenshot" src ="{{project.screenshot}}">
+						<div class ="description project list link"><a href="{{project.link}}">Link to Github</a></div>
+						<div class ="description project list deployLink"><a href="{{project.deployLink}}">Link to Website</div>
+					
+			</div>
+		</div>
+	</div>
+
+	<div class="col-sm-12">
+	  <footer class="main-footer text-center">
+	      <span>&copy; 2017 Caitlin Murnick</span>
+	  </footer>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+

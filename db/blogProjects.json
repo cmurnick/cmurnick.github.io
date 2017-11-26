@@ -1,43 +1,168 @@
 {
-	"blogs": [
-		{
+	"blogs": {
+		"blog0": {
+			"id": 0,
 			"name": "JavaScript",
 			"date": "July 31, 2017",
-			"blog": "This week has been a real bell curve.  I’ve done a lot of pre-work with JavaScript, but when actually tasked to use it and write code on a blank screen, it proved very difficult.  I was lost on Monday. It was better on Tuesday.  We were working in for loops and then we took our HTML and made it into JS so we could easily add items. By Saturday, I was able to write a small program counting how any quarters, dimes, nickels and pennies were in our pocketbook.  It felt really good to see my progress and to feel the difference in my confidence.  I have a lot to learn, but every time I go to class I know more than the class before so I figure I’m going in the right direction. "
+			"detail": "This week has been a real bell curve.  I’ve done a lot of pre-work with JavaScript, but when actually tasked to use it and write code on a blank screen, it proved very difficult.  I was lost on Monday. It was better on Tuesday.  We were working in for loops and then we took our HTML and made it into JS so we could easily add items. By Saturday, I was able to write a small program counting how any quarters, dimes, nickels and pennies were in our pocketbook.  It felt really good to see my progress and to feel the difference in my confidence.  I have a lot to learn, but every time I go to class I know more than the class before so I figure I’m going in the right direction. ",
+			"showDetails": false
 		},
 
-		{
+		"blog1": {
+			"id": 1,
 			"name": "The struggle",
 			"date": "August 7, 2017",
-			"blog": "The further we get into JavaScript, the more this struggle has become real.  I know what I want to build, however, coding it correctly has been a different story.  I am going to ask for more practice projects to help solidify these concepts.  It’s been a month since school started and if I look backwards, I have learned so much.  Things that I was struggling with now come naturally.  I’m praying that JavaScript works the same way.  I’m waiting not so patiently for the lightbulb to go on. "
+			"detail": "The further we get into JavaScript, the more this struggle has become real.  I know what I want to build, however, coding it correctly has been a different story.  I am going to ask for more practice projects to help solidify these concepts.  It’s been a month since school started and if I look backwards, I have learned so much.  Things that I was struggling with now come naturally.  I’m praying that JavaScript works the same way.  I’m waiting not so patiently for the lightbulb to go on. ",
+			"showDetails": false
 		},
 
-		{
+		"blog2": {
+			"id": 2,
 			"name": "Working in a Group",
 			"date": "August 14, 2017",
-			"blog": "We had our first group project where we were all pushing our individual pages to GitHub. Our group didn’t have a ton of merge conflicts because we planned well and each had our own CSS and JS files forour individual pages. We have a great group, so I feel like we did pretty well. We divided and conquered pretty well. We could have been more consistent on the styling of each page, but overall we did ok for our first group project."
+			"detail": "We had our first group project where we were all pushing our individual pages to GitHub. Our group didn’t have a ton of merge conflicts because we planned well and each had our own CSS and JS files forour individual pages. We have a great group, so I feel like we did pretty well. We divided and conquered pretty well. We could have been more consistent on the styling of each page, but overall we did ok for our first group project.",
+			"showDetails": false
 		},
 
-		{
-			"name": "My Blog 4",
-			"date": "July 22, 2017",
-			"blog": "Four Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. "
+		"blog3": {
+			"id": 3,
+			"name": "Event Listeners and Markdown",
+			"date": "August 22, 2017",
+			"detail": "",
+			"showDetails": false
 		},
 
-		{
-			"name": "My Blog 5",
-			"date": "July 22, 2017",
-			"blog": "Five Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. "
+		"blog4": {
+			"id": 4,
+			"name": "XHR",
+			"date": "August 29, 2017",
+			"detail": "",
+			"showDetails": false
+		},
+
+		"blog5": {
+			"id": 5,
+			"name": "Bootstrap",
+			"date": "September 5, 2017",
+			"detail": "",
+			"showDetails": false
+		},
+
+		"blog6": {
+			"id": 6,
+			"name": "Task Runners and Browserify",
+			"date": "September 18, 2017",
+			"detail": "",
+			"showDetails": false
+		},
+
+		"blog7": {
+			"id": 7,
+			"name": "What I learned about Chatty & jquery",
+			"date": "October 7, 2017",
+			"detail": "I learned that jquery makes life a whole lot easier.  What used to take many lines of code only takes about half of that now.  I’m glad I have the foundation of the long way; it makes me appreciate the shortcuts that jquery provides.  When it came to our group project, I’ve realized how important it is to plan things out.  It’s really important that the whole team is on the same page for coding and how the project will be structured.",
+			"showDetails": false
+		},
+
+		"blog8": {
+			"id": 8,
+			"name": "What I learned about Promises",
+			"date": "October 17, 2017",
+			"detail": "I’ve learned that Promises are much easier than XHR requests, and I prefer using them.  I do need to work on only grabbing the data I need.  I get confused sometimes with the Promise all function and combining promises.  I really have to take my time.",
+			"showDetails": false
+		},
+
+		"blog9": {
+			"id": 9,
+			"name": "WhatI learned about API's",
+			"date": "October 24, 2017",
+			"detail": "I feel like API’s are like a doctor going into an exploratory surgery.  You don’t always know what you are going to get.  Sometimes it’s hard to get to the data and have it return what you’re looking for.  I’m getting better at it, but it’s still something I struggle with.  I’ve learned that the data structure is super important.",
+			"showDetails": false
+		},
+
+		"blog10": {
+			"id": 10,
+			"name": "What I learned about Firebase",
+			"date": "October 31, 2017",
+			"detail": "I was wondering how we were going to deploy our projects to the web, and was excited to learn about Firebase.  It’s much easier than I thought it would be and works really with with Sublime.  I learned that it’s important to have the project looking exactly how you want it to locally before deploying it and how important it is to include all of the files in the public folder that the project needs to run.  Speaking of public folders, after I deployed our project from the Master branch, I’ve started to make a habit of grunt cleaning it right away so if I make changes I can see them locally.",
+			"showDetails": false
+		},
+
+		"blog11": {
+			"id": 11,
+			"name": "What I learned from Theme Park",
+			"date": "November 13, 2017",
+			"detail": "This was the first group project we had that we deployed to Firebase.  I learned how important is is for everyone to make sure that the API key isn’t pushed up on accident.  Our group worked really well together and we did the work equally.  As the project progressed, our teachers added more requirements.  I worked with a teammate and built upon the functionality that I did.  Though it was clunky, we got it working.  If I had more time, the functions would have been spread out in more than one function.  A real highlight was when something wasn’t working correctly, and I had the answer on how to fix it.  It showed me that I am really starting to understand the concepts.  I’m glad that I was in charge of deploying to Firebase.  It will really help having a better understanding of the application when it comes to my Capstone.",
+			"showDetails": false
+		},
+		
+		"blog12": {
+			"id": 12,
+			"name": "What I learned about Angular(working on Angular-Contacts",
+			"date": "November 20, 2017",
+			"detail": "",
+			"showDetails": false
+		},
+
+		"blog13": {
+			"id": 13,
+			"name": "What I learned about Angular",
+			"date": "November 27, 2017",
+			"detail": "",
+			"showDetails": false
 		}
-	],
-	"projects": [
-		{
+
+	},
+	
+	"projects": {
+		
+		"project0": {
+			"id": 0,
 			"name": "Theme Park",
 			"screenshot": "../images/ThemePark.png",
-			"description": "This was a group project.  See the readme file for details",
+			"description": "As a team we created an interactive grid map of Magic Kingdom. The park includes different areas with attractions and events. When you visit the page all of the attractions and events that are currently showing will be shown on the left. If you are interested in knowing what shows and attractions are playing during a specific hour, select a time in the dropdown menu and the shows will appear on the left. You can click on the attraction names to view the attraction description. If you are searching for a specific attraction, simply input key words into the search bar. A border will appear around the area that the attraction is in.",
 			"link": "https://github.com/nss-evening-cohort-06/theme-park-protagonists",
 			"deployLink": "https://theme-park-927c8.firebaseapp.com"
-
-
-	}]
+		},
+		"project1": {
+			"id": 1,
+			"name": "Angular Contacts",
+			"screenshot": "../images/Angular-Contacts.png",
+			"description": "This project utilized my new skills in Angular. I created a contact directory of my personal contacts.  There can be many different authenticated users who would only see their saved contacts.  The functionality of the application includes the ability to search letter by letter in the view page and favorite page, a star to mark a contact as favorite, the ability to create and edit contacts and a detail page to see all information on the selected contact",
+			"link": "https://github.com/cmurnick/angular-contacts",
+			"deployLink": "angular-contacts-389b6.firebaseapp.com"
+		},
+		"project2": {
+			"id": 2,
+			"name": "Angular Movie History",
+			"screenshot": "../images/Movie-History.png",
+			"description": "I utilized Angular and a Movie API to create this application.  The user has the ability to search for movies letter by letter and then to mark if they want to add it to their Wishlist.  Once they've watched it, they can click the button and move it to the Rated page where they can give it up to a 5 star rating.  On this ave, the user can also delete it from the page or hit the search button to see more details about the movie.",
+			"link": "https://github.com/cmurnick/angular-movie-history",
+			"deployLink": "angular-movie-history-aacea.firebaseapp.com"
+		},
+		"project3": {
+			"id": 3,
+			"name": "Sandwich Maker",
+			"screenshot": "",
+			"description": "",
+			"link": "",
+			"deployLink": ""
+		},
+		"project4": {
+			"id": 4,
+			"name": "Last Group Project",
+			"screenshot": "",
+			"description": "",
+			"link": "",
+			"deployLink": ""
+		},
+		"project5": {
+			"id": 5,
+			"name": "Capstone",
+			"screenshot": "",
+			"description": "",
+			"link": "",
+			"deployLink": ""
+		}
+	}
 }

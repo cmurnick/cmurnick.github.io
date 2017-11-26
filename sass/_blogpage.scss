@@ -1,4 +1,9 @@
 
+.navbar {
+  background-color: #aefcf3;
+
+}
+
 .title {
   font-size: 1.5em;
   margin-bottom: 5px;
@@ -37,11 +42,15 @@ body {
     text-overflow: ellipsis;
 }
 
-#entireBlog {
+.entireIndivBlog {
   min-height: 50px;
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  font-color: gray;
 }
 
-.navbar {
-  background-color: #aefcf3;
 
-}
+
+
+

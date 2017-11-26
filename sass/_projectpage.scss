@@ -1,0 +1,39 @@
+.thumbnail {
+		position: relative;
+		min-height: 750px;
+	}
+
+
+//each entire card
+.project {
+	justify-content: center;
+	text-align: center;
+	font-size: 50px;
+	display: block;
+	display: wrap;
+	
+
+	.words {
+		text-align: left;
+	}
+
+	.header {
+		font-weight: bold;
+		font-size: 28px;
+	}
+
+	.description {
+		font-size: 18px;
+	}
+
+	//the picture of the project screenshot
+	.screenshot {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		max-height: 100%;
+		max-width: 100%;
+		border: 1px solid lightgray;
+		position: relative;
+}
+
+}

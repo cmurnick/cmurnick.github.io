@@ -1,0 +1,40 @@
+<div>
+  <h1 class="text-center mainHeader">My Blog Posts</h1>
+
+
+
+
+  <div >
+    <!-- <div class=" row"> -->
+      <div><h4 class="text-center">Click on any blog post to view the entire post here:</h4></div>
+      
+      <div ng-if="!blog.showDetails" class ="entireIndivBlog col-xs-8 col-md-10 col-xs-offset-2 col-md-offset-1">
+        <p >crap</p>
+      </div>
+  </div>
+
+  <div >
+    <div class="container-fluid col-sm-6 col-md-4" ng-repeat="blog in blogs">
+          <div class="set-height thumbnail blog" ng-click="switchShowDetails(blog, true)">
+            <div class="caption" >
+              <div class ="text-uppercase list title">{{blog.name}} </div>
+              <div class ="list date">{{blog.date}}</div>
+              <div class ="list blog">{{blog.detail}} </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="col-sm-12">
+  <footer class="main-footer text-center">
+      <span>&copy; 2017 Caitlin Murnick</span>
+  </footer>
+</div>
+
+
+
+
+
+

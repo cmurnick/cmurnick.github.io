@@ -1,5 +1,4 @@
 .DS_Store
 lib/node_modules
-db/firebaseKey.json
-dist
+javascripts/AppConstants.js
 public
