@@ -24,17 +24,9 @@ app.controller("blogCtrl", function($rootScope, $routeParams, $scope, BlogServic
 	// 		});
 	// 	};
 
-	$scope.switchShowDetails = function(blog, isShowDetail) {
-		blog.showDetails = isShowDetail;
-		let updatedBlog = BlogService.createBlogObject(blog);
-		BlogService.updateBlog(updatedBlog, blog.id).then((result) => {
-			console.log("result append blog", result);
-			showBlogs();
-
-		}).catch((err) => {
-			console.log("error in appendText", err);
-		});
-
+	$scope.clickBlog = function(blog) {
+		$scope.blogDetails = blog;
+		console.log("blog?", blog);
 	};
 
 

@@ -9,7 +9,7 @@
 				<div class="thumbnail too project">
 						<div class="text-uppercase project list header title">{{project.name}} </div>
 						<div class ="description project words">{{project.description}} </div>
-							<img class ="list screenshot" src ="{{project.screenshot}}">
+							<img ng-if="project.screenshot !== ''" class ="list screenshot" ng-src="{{project.screenshot}}">
 						<div class ="description project list link"><a href="{{project.link}}">Link to Github</a></div>
 						<div class ="description project list deployLink"><a href="{{project.deployLink}}">Link to Website</div>
 					

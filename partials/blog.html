@@ -8,14 +8,16 @@
     <!-- <div class=" row"> -->
       <div><h4 class="text-center">Click on any blog post to view the entire post here:</h4></div>
       
-      <div ng-if="!blog.showDetails" class ="entireIndivBlog col-xs-8 col-md-10 col-xs-offset-2 col-md-offset-1">
-        <p >crap</p>
+      <div  class ="entireIndivBlog col-xs-8 col-md-10 col-xs-offset-2 col-md-offset-1">
+<!--         <div class ="text-uppercase list title">{{blogDetails.name}} </div>
+              <div class ="list date">{{blog.date}}</div>
+ -->              <div class ="list blog">{{blogDetails.detail}} </div>
       </div>
   </div>
 
   <div >
     <div class="container-fluid col-sm-6 col-md-4" ng-repeat="blog in blogs">
-          <div class="set-height thumbnail blog" ng-click="switchShowDetails(blog, true)">
+          <div class="set-height thumbnail blog" ng-click="clickBlog(blog)">
             <div class="caption" >
               <div class ="text-uppercase list title">{{blog.name}} </div>
               <div class ="list date">{{blog.date}}</div>
