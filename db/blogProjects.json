@@ -135,7 +135,7 @@
 		"project2": {
 			"id": 2,
 			"name": "Angular Movie History",
-			"screenshot": "../images/Movie-History.png",
+			"screenshot": "../images/movie-history.png",
 			"description": "I utilized Angular and a Movie API to create this application.  The user has the ability to search for movies letter by letter and then to mark if they want to add it to their Wishlist.  Once they've watched it, they can click the button and move it to the Rated page where they can give it up to a 5 star rating.  On this ave, the user can also delete it from the page or hit the search button to see more details about the movie.",
 			"link": "https://github.com/cmurnick/angular-movie-history",
 			"deployLink": "angular-movie-history-aacea.firebaseapp.com"
