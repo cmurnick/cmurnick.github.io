@@ -7,10 +7,6 @@ app.run(function($location, FIREBASE_CONFIG) {
 
 app.config(function($routeProvider){
   $routeProvider
-    .when("/history", {
-      templateUrl: 'partials/history.html',
-      // controller: 'historyCtrl',
-    })
     .when("/contact", {
       templateUrl: 'partials/contact.html',
       // controller: 'contactCtrl',

@@ -1,11 +1,11 @@
-<div>
+<div class= "col-md-8 col-md-offset-2" >
 		<div>
 		  <h1 class="text-center mainHeader">My Projects</h1>
 		</div>
 
-		<div id="project-holder">
+		<div class="project-holder ">
 		
-			<div ng-repeat="project in projects" class="col-xm-12 col-md-4" >
+			<div ng-repeat="project in projects" class="col-xm-12 col-md-4 scrollAcross" >
 				<div class="thumbnail too project">
 						<img ng-if="project.screenshot !== ''" class ="list screenshot" ng-src="{{project.screenshot}}">
 						<div class="text-uppercase project list header title">{{project.name}} </div>
