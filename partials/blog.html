@@ -1,39 +1,31 @@
-<div>
-  <h1 class="text-center mainHeader">My Blog Posts</h1>
 
 
+<div class="overallBlogDiv">
+  <div class="body"
+    <div>
+      <h1 class="text-center mainHeader">My Blog Posts</h1>
+      <h4 class="text-center">Click on any blog post to view the entire post here:</h4>
+    </div>
+        
+    <div  class ="entireIndivBlog col-xs-8 col-md-10 col-xs-offset-2 col-md-offset-1">
+      <div class ="list blog">{{blogDetails.detail}} </div>
+    </div>
+   
 
-
-  <div >
-    <!-- <div class=" row"> -->
-      <div><h4 class="text-center">Click on any blog post to view the entire post here:</h4></div>
-      
-      <div  class ="entireIndivBlog col-xs-8 col-md-10 col-xs-offset-2 col-md-offset-1">
-<!--         <div class ="text-uppercase list title">{{blogDetails.name}} </div>
-              <div class ="list date">{{blog.date}}</div>
- -->              <div class ="list blog">{{blogDetails.detail}} </div>
-      </div>
-  </div>
-
-  <div >
-    <div class="container-fluid col-sm-6 col-md-4" ng-repeat="blog in blogs">
+    <div class="allofthem container">
+      <div class=" col-sm-6 col-md-4" ng-repeat="blog in blogs">
           <div class="set-height thumbnail blog" ng-click="clickBlog(blog)">
             <div class="caption" >
-              <div class ="text-uppercase list title">{{blog.name}} </div>
-              <div class ="list date">{{blog.date}}</div>
-              <div class ="list blog">{{blog.detail}} </div>
+                <div class ="text-uppercase list title">{{blog.name}} </div>
+                <div class ="list date">{{blog.date}}</div>
+                <div class ="list blog">{{blog.detail}} </div>
             </div>
           </div>
       </div>
     </div>
-
+  </div>
 </div>
 
-<div class="col-sm-12">
-  <footer class="main-footer fixed-bottom text-center">
-      <span>&copy; 2017 Caitlin Murnick</span>
-  </footer>
-</div>
 
 
 

@@ -1,16 +1,32 @@
-.too {
-		position: relative;
-		min-height: 750px;
+.project-holder {
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+	background-image: -webkit-linear-gradient(left, #B3D1D3 60%, #F6F6F6 100%);
+
+	padding-top: 30px;
+	border-radius: 5px;
+	// position: relative;
+
+	.scrollAcross {
+		min-width: 480px;
+
 	}
+}
+
+// .too {
+// 		position: relative;
+// 		min-height: 750px;
+// 	}
 
 
 //each entire card
 .project {
 	justify-content: center;
 	text-align: center;
-	font-size: 50px;
-	display: block;
-	display: wrap;
+	font-size: 30px;
+	// display: block;
+	// display: wrap;
 	
 
 	.words {
@@ -19,12 +35,14 @@
 
 	.header {
 		font-weight: bold;
-		font-size: 28px;
+		font-size: 20px;
 	}
 
 
 	.description {
-		font-size: 18px;
+		font-size: 12px;
+		margin-left: 8px;
+		margin-right: 8px;
 	}
 
 	//the picture of the project screenshot

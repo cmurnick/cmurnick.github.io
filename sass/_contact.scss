@@ -1,12 +1,42 @@
 .contactHeader {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
-.profile {
-	border: 2px solid gray;
+.introduce {
+	margin-bottom: 60px;
+}
+
+.picture {
+	padding: 0px;
 }
 
 .pictureCait {
-	max-width: 250px;
-	max-height: 250px;
+	width: 100%;
+	height: 100%;
+	// height: 267.33px;
+
+	// max-height: 250px;
+}
+
+.education, .profile, .picture {
+	background-color: $aboutBody;
+	height: 267.33px;
+	// margin: 0px;
+}
+
+.quoteContainer {
+	background-color: $secondColor;
+	color: white;
+	font-size: 24px;
+
+	.quote {
+		margin-top: 20px;
+		text-align: center;
+
+
+	}
+}
+
+.author {
+		margin-left: 500px;
 }

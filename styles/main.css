@@ -2,7 +2,7 @@
   margin: 0px; }
 
 .navbar {
-  background-color: white; }
+  background-color: #f6f6f6; }
 
 body {
   margin-top: 60px;
@@ -34,7 +34,7 @@ body {
     text-weight: bold;
     text-align: center; }
   .aboutMe .caitlinH4 {
-    color: #8c8fd1;
+    color: #f79833;
     text-transform: normal;
     text-align: center;
     margin-bottom: 20px; }
@@ -53,6 +53,10 @@ body {
   -moz-box-shadow: 10px 10px 37px 0px black;
   box-shadow: 10px 10px 37px 0px black;
   shadow: 42px 2px 10px 0px black; }
+
+.overallBlogDiv {
+  background-color: #b3d1d3;
+  margin-top: -10px; }
 
 .title {
   font-size: 1.5em;
@@ -80,23 +84,29 @@ body {
   border-radius: 5px 5px 5px 5px;
   font-color: gray; }
 
-.too {
-  position: relative;
-  min-height: 750px; }
+.project-holder {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  background-image: -webkit-linear-gradient(left, #B3D1D3 60%, #F6F6F6 100%);
+  padding-top: 30px;
+  border-radius: 5px; }
+  .project-holder .scrollAcross {
+    min-width: 480px; }
 
 .project {
   justify-content: center;
   text-align: center;
-  font-size: 50px;
-  display: block;
-  display: wrap; }
+  font-size: 30px; }
   .project .words {
     text-align: left; }
   .project .header {
     font-weight: bold;
-    font-size: 28px; }
+    font-size: 20px; }
   .project .description {
-    font-size: 18px; }
+    font-size: 12px;
+    margin-left: 8px;
+    margin-right: 8px; }
   .project .screenshot {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -109,14 +119,32 @@ body {
   color: gray; }
 
 .contactHeader {
-  margin-top: 50px; }
+  margin-top: 20px; }
 
-.profile {
-  border: 2px solid gray; }
+.introduce {
+  margin-bottom: 60px; }
+
+.picture {
+  padding: 0px; }
 
 .pictureCait {
-  max-width: 250px;
-  max-height: 250px; }
+  width: 100%;
+  height: 100%; }
+
+.education, .profile, .picture {
+  background-color: #b3d1d3;
+  height: 267.33px; }
+
+.quoteContainer {
+  background-color: #f79833;
+  color: white;
+  font-size: 24px; }
+  .quoteContainer .quote {
+    margin-top: 20px;
+    text-align: center; }
+
+.author {
+  margin-left: 500px; }
 
 .fa {
   color: darkGray;
