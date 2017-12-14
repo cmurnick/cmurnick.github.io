@@ -1,32 +1,30 @@
+.navbar-light {
+  margin: 0px; }
+
 .navbar {
   background-color: white; }
 
 body {
   margin-top: 60px;
   margin-bottom: 60px;
-  color: white;
-  background-color: #b3d1d3; }
-
-h1 {
-  text-shadow: 2px 2px 10px white; }
-
-.footer {
-  display: inline-block;
-  margin-left: 15px; }
+  color: gray; }
 
 .aboutFlex {
   background-color: #b3d1d3;
   display: flex;
-  flex-wrap: wrap;
   justify-content: left;
   margin: auto;
   vertical-align: middle; }
 
+.aboutMeDiv {
+  margin-top: -10px; }
+
 .aboutMe {
   background-color: white;
   margin-top: 100px;
+  margin-left: 90px;
   margin-bottom: auto;
-  border-radius: 5%;
+  border-radius: 10px;
   padding: 25px; }
   .aboutMe .caitlinH1 {
     margin-bottom: 20px;
@@ -109,6 +107,16 @@ h1 {
 
 .list {
   color: gray; }
+
+.contactHeader {
+  margin-top: 50px; }
+
+.profile {
+  border: 2px solid gray; }
+
+.pictureCait {
+  max-width: 250px;
+  max-height: 250px; }
 
 .fa {
   color: darkGray;

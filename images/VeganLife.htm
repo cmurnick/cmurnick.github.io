@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost:8080/#!/grocery -->
+<html class="fa-events-icons-ready"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	<title>VeganLife</title>
+<link rel="stylesheet" type="text/css" href="./VeganLife_files/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="./VeganLife_files/main.css"><link href="./VeganLife_files/29dd8d1b0c.css" media="all" rel="stylesheet"><script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script></head>
+
+
+
+
+<body ng-app="RecipeApp" class="ng-scope">
+
+	<!-- ngInclude: './partials/navbar.html' --><div ng-include="&#39;./partials/navbar.html&#39;" class="ng-scope" style=""><nav class="navbar navbar-fixed-top ng-scope" ng-controller="NavCtrl">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="top navbar-brand" href="http://localhost:8080/#"><img class="tomato" ng-src="../images/VeganLifeLogo.png" src="./VeganLife_files/VeganLifeLogo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="top nav navbar-nav navbar-right ng-hide" ng-show="!navbar">
+        <li><a class="topNavBar" ng-href="#!/auth" href="http://localhost:8080/#!/auth">Login</a></li>
+      </ul>
+      <ul class="top nav navbar-nav navbar-right" ng-show="navbar">
+        <li><a class="topNavBar" ng-href="#!/search" href="http://localhost:8080/#!/search">Search</a></li>
+        <li><a class="topNavBar" ng-href="#!/favorite" href="http://localhost:8080/#!/favorite">Favorite</a></li>
+        <li><a class="topNavBar" ng-href="#!/menu" href="http://localhost:8080/#!/menu">Menu</a></li>
+        <li><a class="topNavBar" ng-href="#!/grocery" href="http://localhost:8080/#!/grocery">Grocery List</a></li>
+
+        <li><a class="topNavBar" ng-click="logoutUser()">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav></div>
+	<!-- ngView: --><div class="col-xs-8 col-xs-offset-2 ng-scope" ng-view="" style=""><div class="ng-scope">
+  <div class="text-center">
+    <h1 class="mainHeader">Grocery List</h1>
+  </div>
+    
+  <div class="col-sm-12 col-md-4 yellowList">
+    <table style="width:100%">
+      <tbody><tr>
+        <th class="overallGrocery text-center">Overall List</th>
+      </tr>
+      <tr>
+        <td>
+          <!-- ngRepeat: recipe in recipes --><div ng-repeat="recipe in recipes" class="ng-scope" style="">
+            <!-- ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted" style="">1 package cornbread stuffing mix</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">2 stalk celery</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">4 green onions</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">½ c. fresh parsley leaves</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">2 large ripe Bartlett pears</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">3 c. water</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">1 tbsp. olive oil</div><!-- end ngRepeat: i in recipe.ingredients -->
+          </div><!-- end ngRepeat: recipe in recipes --><div ng-repeat="recipe in recipes" class="ng-scope">
+            <!-- ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted" style="">3 tbsp cocoa powder</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">¼ tsp cinnamon</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">½ tsp vanilla extract</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">4 to 6 tbsp corn starch (depending on how thick you you like pudding)</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">1 cup rice milk</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">¼ cup pumpkin puree</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">Sugar, to taste</div><!-- end ngRepeat: i in recipe.ingredients -->
+          </div><!-- end ngRepeat: recipe in recipes --><div ng-repeat="recipe in recipes" class="ng-scope">
+            <!-- ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted" style="">3 tablespoons olive oil</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">1 cup bulgur wheat, uncooked</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">2 scallions, chopped</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">1 cup seeded, diced tomato</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">Kosher salt</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">1/2 cup parsley, chopped</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">1/2 large cucumber, seeded and diced</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">1/4 cup slivered almonds, toasted</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">Freshly ground black pepper (optional)</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">1/3 cup fresh lemon juice</div><!-- end ngRepeat: i in recipe.ingredients -->
+          </div><!-- end ngRepeat: recipe in recipes --><div ng-repeat="recipe in recipes" class="ng-scope">
+            <!-- ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted" style="">2 lbs apples (either cortland or gala for best results), cored and chopped</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">2 tsp cinnamon</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">Juice of 1 lemon</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">1/3 cup brown sugar</div><!-- end ngRepeat: i in recipe.ingredients -->
+          </div><!-- end ngRepeat: recipe in recipes --><div ng-repeat="recipe in recipes" class="ng-scope">
+            <!-- ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted" style="">1 head cauliflower</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">Spray oil (like pam)</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">1 pinch salt</div><!-- end ngRepeat: i in recipe.ingredients --><div ng-repeat="i in recipe.ingredients" class="overallGroceryIngredient ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-empty" <span="" ng-model="deleted">1 pinch turmeric</div><!-- end ngRepeat: i in recipe.ingredients -->
+          </div><!-- end ngRepeat: recipe in recipes -->
+        </td>    
+      </tr>
+    </tbody></table>  
+  </div>
+
+
+  <div class="container col-sm-12 col-md-8 col-lg-8">
+    <div class="row">
+      <!-- ngRepeat: recipe in recipes --><div ng-repeat="recipe in recipes" class="col-sm-12 col-md-12 recipe ng-scope" style="">
+        <div class="thumbnail ">
+            <div class="imageHeader"><img class="groceryImage" ng-src="https://www.edamam.com/web-img/96f/96f6255a3674abef7fa9b3a362023594.jpg" src="./VeganLife_files/96f6255a3674abef7fa9b3a362023594.jpg">
+                <h1 class="groceryTitle ng-binding">Savory Pear Stuffing</h1>
+            </div>
+           <!--  <ul ng-repeat="i in recipe.ingredients" class="ingredientHolder" ng-class="{strike: deleted}">
+                  <li  class="groceryIngredient">
+                    <input class="checkbox" type="checkbox" ng-model="deleted">{{i.ingredient}}
+                  </li>
+            </ul> -->
+        </div>
+      </div><!-- end ngRepeat: recipe in recipes --><div ng-repeat="recipe in recipes" class="col-sm-12 col-md-12 recipe ng-scope">
+        <div class="thumbnail ">
+            <div class="imageHeader"><img class="groceryImage" ng-src="https://www.edamam.com/web-img/1b9/1b94b1a9cf649ada37a78259f1f9ae12.jpg" src="./VeganLife_files/1b94b1a9cf649ada37a78259f1f9ae12.jpg">
+                <h1 class="groceryTitle ng-binding">Vegan Chocolate &amp; Pumpkin Pudding</h1>
+            </div>
+           <!--  <ul ng-repeat="i in recipe.ingredients" class="ingredientHolder" ng-class="{strike: deleted}">
+                  <li  class="groceryIngredient">
+                    <input class="checkbox" type="checkbox" ng-model="deleted">{{i.ingredient}}
+                  </li>
+            </ul> -->
+        </div>
+      </div><!-- end ngRepeat: recipe in recipes --><div ng-repeat="recipe in recipes" class="col-sm-12 col-md-12 recipe ng-scope">
+        <div class="thumbnail ">
+            <div class="imageHeader"><img class="groceryImage" ng-src="https://www.edamam.com/web-img/ca0/ca036af38cfb3305977e74f49eddff72.jpg" src="./VeganLife_files/ca036af38cfb3305977e74f49eddff72.jpg">
+                <h1 class="groceryTitle ng-binding">Healthy &amp; Delicious: Tabbouleh Salad Recipe</h1>
+            </div>
+           <!--  <ul ng-repeat="i in recipe.ingredients" class="ingredientHolder" ng-class="{strike: deleted}">
+                  <li  class="groceryIngredient">
+                    <input class="checkbox" type="checkbox" ng-model="deleted">{{i.ingredient}}
+                  </li>
+            </ul> -->
+        </div>
+      </div><!-- end ngRepeat: recipe in recipes --><div ng-repeat="recipe in recipes" class="col-sm-12 col-md-12 recipe ng-scope">
+        <div class="thumbnail ">
+            <div class="imageHeader"><img class="groceryImage" ng-src="https://www.edamam.com/web-img/204/20494d9a029499221f6105697dd54667.jpg" src="./VeganLife_files/20494d9a029499221f6105697dd54667.jpg">
+                <h1 class="groceryTitle ng-binding">Baked Apples with Cinnamon</h1>
+            </div>
+           <!--  <ul ng-repeat="i in recipe.ingredients" class="ingredientHolder" ng-class="{strike: deleted}">
+                  <li  class="groceryIngredient">
+                    <input class="checkbox" type="checkbox" ng-model="deleted">{{i.ingredient}}
+                  </li>
+            </ul> -->
+        </div>
+      </div><!-- end ngRepeat: recipe in recipes --><div ng-repeat="recipe in recipes" class="col-sm-12 col-md-12 recipe ng-scope">
+        <div class="thumbnail ">
+            <div class="imageHeader"><img class="groceryImage" ng-src="https://www.edamam.com/web-img/22d/22d8e8d717ba82c451cb970e203d802a.jpg" src="./VeganLife_files/22d8e8d717ba82c451cb970e203d802a.jpg">
+                <h1 class="groceryTitle ng-binding">Cauliflower Popcorn</h1>
+            </div>
+           <!--  <ul ng-repeat="i in recipe.ingredients" class="ingredientHolder" ng-class="{strike: deleted}">
+                  <li  class="groceryIngredient">
+                    <input class="checkbox" type="checkbox" ng-model="deleted">{{i.ingredient}}
+                  </li>
+            </ul> -->
+        </div>
+      </div><!-- end ngRepeat: recipe in recipes -->
+    </div>
+  </div>
+
+</div>
+<!-- 
+
+
+  <div id="ingredients" class="">
+
+      <div ng-repeat="recipe in recipes" class="col-sm-12 col-md-6 recipe">
+          
+
+              <div class="caption groceryCard">
+                  <div class="imageHeader"><img class="groceryImage" ng-src="{{recipe.image}}">
+                    <h1 class="groceryTitle">{{recipe.label}}</h1>
+                  </div>
+                  <div ng-repeat="i in recipe.ingredients" class="ingredientHolder">
+                    <p>
+                        <label ng-class="{strike: deleted}" class="groceryIngredient">
+                          <input class="checkbox" type="checkbox" ng-model="deleted">{{i.ingredient}}
+                        </label>
+                    </p>  
+                  </div>
+              </div>
+
+       
+        </div>
+      </div>
+  </div>
+
+</div> --></div>
+
+
+	<script src="./VeganLife_files/firebase.js"></script>
+	<script src="./VeganLife_files/29dd8d1b0c.js"></script>
+
+	<script type="text/javascript" src="./VeganLife_files/jquery.min.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/angular.min.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/angular-route.min.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/angular-animate.min.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/angular-sanitize.min.js"></script>
+
+	<script type="text/javascript" src="./VeganLife_files/app.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/AppConstants.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/AppConfig.js"></script>
+
+	<script type="text/javascript" src="./VeganLife_files/AuthService.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/EdamamService.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/RecipeService.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/IngredientService.js"></script>
+
+	<script type="text/javascript" src="./VeganLife_files/NavCtrl.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/SearchCtrl.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/AuthCtrl.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/FavoriteCtrl.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/DetailCtrl.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/MenuCtrl.js"></script>
+	<script type="text/javascript" src="./VeganLife_files/GroceryCtrl.js"></script>
+
+<span style="border-radius: 3px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased;">Save</span><span style="width: 24px; height: 24px; background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxtYXNrIGlkPSJtIj48cmVjdCBmaWxsPSIjZmZmIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHJ4PSI2IiByeT0iNiIvPjxyZWN0IGZpbGw9IiMwMDAiIHg9IjUiIHk9IjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgcng9IjEiIHJ5PSIxIi8+PHJlY3QgZmlsbD0iIzAwMCIgeD0iMTAiIHk9IjAiIHdpZHRoPSI0IiBoZWlnaHQ9IjI0Ii8+PHJlY3QgZmlsbD0iIzAwMCIgeD0iMCIgeT0iMTAiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0Ii8+PC9tYXNrPjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9IiNmZmYiIG1hc2s9InVybCgjbSkiLz48L3N2Zz4=&quot;) 50% 50% / 14px 14px no-repeat rgba(0, 0, 0, 0.4); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; border-radius: 12px;"></span></body></html>

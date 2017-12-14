@@ -1,26 +1,27 @@
 
 .aboutFlex {
-	background-color: #b3d1d3;
+	background-color: $aboutBody;
 	display: flex;
-	flex-wrap: wrap;
+	// flex-wrap: wrap;
 	justify-content: left;
 	margin: auto;
 	vertical-align: middle;
 
 }
 
+.aboutMeDiv {
+	margin-top: -10px;
+}
+
 .aboutMe {
 			
 			background-color: white;
 			margin-top: 100px;
+			margin-left: 90px;
 
 			margin-bottom: auto;
-			border-radius: 5%;
+			border-radius: 10px;
 			padding: 25px;
-// -webkit-box-shadow: inset 13px -13px 69px -15px rgba(168,168,168,1);
-// -moz-box-shadow: inset 13px -13px 69px -15px rgba(168,168,168,1);
-// box-shadow: inset 13px -13px 69px -15px rgba(168,168,168,1);
-
 
 	.caitlinH1 {
 		margin-bottom: 20px;
