@@ -1,10 +1,12 @@
-@import 'layout';
 @import 'variables';
+@import 'navBar';
+@import 'layout';
+@import 'aboutMe';
 @import 'blogpage';
 @import 'projectpage';
+@import 'contact';
 
 .fa {
 	color: darkGray;
 	margin: 10px;
 }
-
