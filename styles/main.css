@@ -84,16 +84,6 @@ body {
   border-radius: 5px 5px 5px 5px;
   font-color: gray; }
 
-.project-holder {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-  background-image: -webkit-linear-gradient(left, #B3D1D3 60%, #F6F6F6 100%);
-  padding-top: 30px;
-  border-radius: 5px; }
-  .project-holder .scrollAcross {
-    min-width: 480px; }
-
 .project {
   justify-content: center;
   text-align: center;
@@ -125,27 +115,56 @@ body {
   margin-bottom: 60px; }
 
 .picture {
-  padding: 0px; }
+  padding: 0px;
+  display: block;
+  margin: 0 auto; }
 
 .pictureCait {
-  width: 100%;
   height: 100%; }
+
+.detailHead {
+  font-size: 20px;
+  font-weight: bold; }
+
+.detailH5 {
+  font-size: 16px;
+  margin-bottom: 3px;
+  color: white; }
+
+.detailP {
+  font-size: 14px;
+  font-style: italic; }
 
 .education, .profile, .picture {
   background-color: #b3d1d3;
   height: 267.33px; }
 
+.contactContainer {
+  background-color: #b3d1d3; }
+
+.WaysToContact {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  color: white;
+  justify-content: center; }
+
+.sectionInfo {
+  align-content: center; }
+
 .quoteContainer {
   background-color: #f79833;
   color: white;
-  font-size: 24px; }
+  font-size: 24px;
+  font-style: italic; }
   .quoteContainer .quote {
     margin-top: 20px;
-    text-align: center; }
+    text-align: center;
+    font-style: italic; }
 
 .author {
   margin-left: 500px; }
 
 .fa {
-  color: darkGray;
+  color: white;
   margin: 10px; }

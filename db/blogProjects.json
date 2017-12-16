@@ -28,7 +28,7 @@
 			"id": 3,
 			"name": "Event Listeners and Markdown",
 			"date": "August 22, 2017",
-			"detail": "",
+			"detail": "I will never look at a webpage the same way again.  Every time I click something, there is an event listener behind it.  It’s mind boggling.  Even when hovering over a picture and another picture shows up, it’s an event listener.  It’s amazing that we can access any element on a page and make it do something when we activate the event listener.  Markdown makes sense, but is tedious and I don’t really enjoy it much.  It’s a necessary evil with read.me files, but I have a feeling I will put doing them off as long as possible.",
 			"showDetails": false
 		},
 
@@ -36,7 +36,7 @@
 			"id": 4,
 			"name": "XHR",
 			"date": "August 29, 2017",
-			"detail": "",
+			"detail": "This was the first time we made a call to pull information from a JSON file.  Though it was difficult, it was a great experience to pull data from a different location than a single js file.  We had more practice with using Event Listeners and added more functionality to the project than many before.  It really pulled together a lot of different concepts that we’ve learned like writing to the dom.",
 			"showDetails": false
 		},
 
@@ -44,7 +44,7 @@
 			"id": 5,
 			"name": "Bootstrap",
 			"date": "September 5, 2017",
-			"detail": "",
+			"detail": "Oh bootstrap.  How I struggle.  A lot of people in class have already used bootstrap and know what they’re doing.  It takes me forever trying to figure things out, although, I am slowly starting to get it.  In the long run, it makes CSS on my projects much easier to do.  It’s just hard because I don’t know what I don’t know and sometimes, I don’t even know what to even try to lookup because I didn’t realize that it could even do some things.  An example would be the .thumbnail.  I had no idea that I could make cards that way. ",
 			"showDetails": false
 		},
 
@@ -52,7 +52,7 @@
 			"id": 6,
 			"name": "Task Runners and Browserify",
 			"date": "September 18, 2017",
-			"detail": "",
+			"detail": "Though it takes a while to set-up, browserify and using grunt and setting up the file structure really helps keep things organized.  Grunt helps me find mistakes, which really helps.  Darn the semicolons.  I still struggle with promises, but if I stop and look backwards, I’ve learned a lot in the last few months.",
 			"showDetails": false
 		},
 
@@ -100,7 +100,7 @@
 			"id": 12,
 			"name": "What I learned about Angular(working on Angular-Contacts",
 			"date": "November 20, 2017",
-			"detail": "",
+			"detail": "This project was the first where I had to set-up the file structure by myself and really got to take charge of the coding.  We had the criteria we had to meet, but I really enjoyed working in Angular.  I spent a long time on the favorite star and getting it to highlight in the appropriate pages correctly.  I learned that you shouldn’t hard code a Boolean value if you can help it.  So, I used an ng-if in my html which pushed the value appropriately to the controller.  When this project was complete, I felt very accomplished.",
 			"showDetails": false
 		},
 
@@ -108,7 +108,7 @@
 			"id": 13,
 			"name": "What I learned about Angular",
 			"date": "November 27, 2017",
-			"detail": "",
+			"detail": "I learned that there are much easier ways of making code work than using vanilla Javascript and jquery.  Angular simplifies a lot of complex coding issues and I have a lot to learn to take full advantage of all of its features.  It is a bit confusing and easy to get lost with Controllers and Services, but they keep everything neatly in its place rather than just having a few Javascript files. ",
 			"showDetails": false
 		}
 
