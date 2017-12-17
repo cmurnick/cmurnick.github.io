@@ -84,29 +84,32 @@ body {
   border-radius: 5px 5px 5px 5px;
   font-color: gray; }
 
+.mainHeader {
+  margin-bottom: 30px; }
+
+.too {
+  height: 300px; }
+
 .project {
   justify-content: center;
-  text-align: center;
-  font-size: 30px; }
+  text-align: center; }
   .project .words {
     text-align: left; }
   .project .header {
     font-weight: bold;
-    font-size: 20px; }
-  .project .description {
-    font-size: 12px;
-    margin-left: 8px;
-    margin-right: 8px; }
-  .project .screenshot {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-height: 100%;
-    max-width: 100%;
-    border: 1px solid lightgray;
-    position: relative; }
+    font-size: 20px;
+    color: gray; }
+
+.screenshot {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  max-height: 100%;
+  max-width: 100%;
+  border: 1px solid lightgray;
+  position: relative; }
 
 .list {
-  color: gray; }
+  color: #88e1f7; }
 
 .contactHeader {
   margin-top: 20px; }
