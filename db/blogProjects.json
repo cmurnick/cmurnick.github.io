@@ -142,27 +142,27 @@
 		},
 		"project3": {
 			"id": 3,
-			"name": "Sandwich Maker",
-			"screenshot": "",
+			"name": "Adopt My Cats",
+			"screenshot": "../images/AdoptCats.png",
 			"description": "",
-			"link": "",
+			"link": "https://github.com/cmurnick/AdoptMyCats",
 			"deployLink": ""
 		},
 		"project4": {
 			"id": 4,
-			"name": "Last Group Project",
-			"screenshot": "",
+			"name": "Weather App",
+			"screenshot": "../images/weather.png",
 			"description": "",
-			"link": "",
+			"link": "https://github.com/cmurnick/weather",
 			"deployLink": ""
 		},
 		"project5": {
 			"id": 5,
 			"name": "Capstone",
-			"screenshot": "",
+			"screenshot": "../images/capstone.png",
 			"description": "",
-			"link": "",
-			"deployLink": ""
+			"link": "https://github.com/cmurnick/Capstone",
+			"deployLink": "https://veganrecipes-862b7.firebaseapp.com/#!/search"
 		}
 	}
 }
