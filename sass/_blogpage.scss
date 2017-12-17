@@ -1,8 +1,14 @@
 .overallBlogDiv {
   background-color: $aboutBody;
+  background-image: url("../images/orchid.png");
+  background-repeat: no-repeat;
+  background-position: center;
   margin-top: -10px;
 }
 
+.BlogHead {
+  padding-top: 25px;
+}
 .title {
   font-size: 1.5em;
   margin-bottom: 5px;

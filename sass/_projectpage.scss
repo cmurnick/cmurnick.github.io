@@ -17,8 +17,12 @@
 		font-size: 20px;
 		color: gray;
 	}
+}
 
-	
+.too {
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(168,168,168,1);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(168,168,168,1);
+	box-shadow: 4px 4px 5px 0px rgba(168,168,168,1);
 }
 
 //the picture of the project screenshot
@@ -31,5 +35,5 @@
 	position: relative;
 }
 .list {
-		color: #88e1f7;
+		color: gray;
 	}
